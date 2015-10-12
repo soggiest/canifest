@@ -25,7 +25,7 @@ To build this repo locally, just execute the build script, e.g.:
 
 2. Ensure GOROOT is set correctly, e.g.:
   - export GOROOT=/opt/local/go
-  - export GOROOT_BOOTSTRAP=<path_to_systemwide_go>
+  - export GOROOT_BOOTSTRAP=\<path_to_systemwide_go\>
     - note: GOROOT_BOOTSTRAP must be different than GOROOT 
 
 3. Execute the prep build
