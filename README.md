@@ -9,7 +9,7 @@
 
 
 ### Build Instructions
-#### Local Builds
+#### Local Build
 To build this repo locally, just execute the build script, e.g.:
 ```
 ./build.sh
