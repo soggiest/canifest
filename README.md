@@ -1,5 +1,4 @@
-##
-Canifest -- \<TBD\>
+## Canifest
 
 ### What it is
 \<TBD\>
