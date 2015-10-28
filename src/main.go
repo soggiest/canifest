@@ -106,7 +106,7 @@ func main() {
         "/testWorkdir"}
     
     //Reading in template file to begin transformation
-    content, _ := ioutil.ReadFile("templates/DockerFile.tmpl")
+    content, _ := ioutil.ReadFile("../templates/DockerFile.tmpl")
 	   tmpl, err := template.New("DockerFile").Parse(string(content))
 	   check(err)
 	   
