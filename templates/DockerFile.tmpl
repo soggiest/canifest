@@ -1,8 +1,26 @@
-From: {{.From}}
+Add {{range .Add}} {{.}}{{end}}
 
-Maintainer: {{.Maintainer}}
+Cmd {{range .Cmd}} {{.}}{{end}}
 
-Label: {{.Label}}
+Copy {{range .Copy}} {{.}}{{end}}
 
+Entrypoint {{.Entrypoint}}
+{{ range $key, $value := .Env }}
+Env {{ $key }} {{ $value }}{{ end }}
 
+Expose {{range .Expose}} {{.}}{{end}}
+
+From {{.From}}
+{{ range $key, $value := .Label }}
+Label {{ $key }} {{ $value }}{{ end }}
+
+Maintainer {{.Maintainer}}
+
+Run {{range .Run}} {{.}}{{end}}
+
+User {{.User}}
+
+Volume {{range .Volume}} {{.}}{{end}}
+
+Workdir {{.Workdir}}
 
