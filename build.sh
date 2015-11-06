@@ -23,5 +23,5 @@ mkdir -p $DESTDIR
 go fmt src
 
 echo "Building..."
-go build -o $DESTDIR/linux/${BIN} src
+go build -o $DESTDIR/linux/${BIN}
 
