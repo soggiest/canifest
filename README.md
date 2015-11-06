@@ -1,7 +1,7 @@
 ## Canifest
 
 ### What it is
-\<TBD\>
+Docker File Editor
 
 
 ### How to use it
