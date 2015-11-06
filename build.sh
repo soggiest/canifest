@@ -20,8 +20,8 @@ export GOPATH=`pwd`
 mkdir -p $DESTDIR
 
 # Ensure formatting is followed 
-go fmt df_generator
+go fmt src
 
 echo "Building..."
-go build -o $DESTDIR/linux/${BIN} df_generator
+go build -o $DESTDIR/linux/${BIN} src
 

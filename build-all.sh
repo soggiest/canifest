@@ -32,17 +32,17 @@ do
 done
 
 # Ensure formatting is followed 
-go fmt df_generator
+go fmt src
 
 echo "Building for Linux(386)"
 export GOOS=linux
-go build -o $DESTDIR/linux/${BIN} df_generator
+go build -o $DESTDIR/linux/${BIN} src
 
 echo "Building for OS X/Darwin(386)"
 export GOOS=darwin
-go build -o $DESTDIR/osx/${BIN} df_generator
+go build -o $DESTDIR/osx/${BIN} src
 
 echo "Building for Windows(386)"
 export GOOS=windows
-go build -o $DESTDIR/win/${BIN}.exe df_generator
+go build -o $DESTDIR/win/${BIN}.exe src
 
