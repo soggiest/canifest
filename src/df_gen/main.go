@@ -23,6 +23,7 @@ import (
 
 /*
 *Dockerfile struct that gets populated by user input
+*
 */
 type Dockerfile struct {
     Add []string
