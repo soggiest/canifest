@@ -20,8 +20,8 @@ export GOPATH=`pwd`
 mkdir -p $DESTDIR
 
 # Ensure formatting is followed 
-go fmt src
+go fmt ${BIN}
 
 echo "Building..."
-go build -o $DESTDIR/linux/${BIN}
+go build -o $DESTDIR/linux/${BIN} ${BIN}
 
