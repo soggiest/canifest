@@ -15,14 +15,14 @@ export GOARCH=386
 echo "Preparing builds for Linux(386)"
 export GOOS=linux
 # cd $GOROOT/src; ./make.bash --no-clean
-cd $GOROOT/src; ./make.bash
+cd $GOROOT; ./make.bash
 
 echo "Preparing builds for OS X/Darwin(386)"
 export GOOS=darwin
-cd $GOROOT/src; ./make.bash --no-clean
+cd $GOROOT; ./make.bash --no-clean
 
 echo "Preparing builds for Windows(386)"
 export GOOS=windows
-cd $GOROOT/src; ./make.bash --no-clean
+cd $GOROOT; ./make.bash --no-clean
 
 # cd $GOROOT/src; ./all.bash
