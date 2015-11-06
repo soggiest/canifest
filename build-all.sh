@@ -36,13 +36,13 @@ go fmt src
 
 echo "Building for Linux(386)"
 export GOOS=linux
-go build -o $DESTDIR/linux/${BIN} src
+go build -o $DESTDIR/linux/${BIN}
 
 echo "Building for OS X/Darwin(386)"
 export GOOS=darwin
-go build -o $DESTDIR/osx/${BIN} src
+go build -o $DESTDIR/osx/${BIN}
 
 echo "Building for Windows(386)"
 export GOOS=windows
-go build -o $DESTDIR/win/${BIN}.exe src
+go build -o $DESTDIR/win/${BIN}.exe
 
