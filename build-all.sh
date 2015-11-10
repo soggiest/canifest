@@ -34,15 +34,15 @@ done
 # Ensure formatting is followed 
 go fmt ${BIN}
 
-echo "Building for Linux(386)"
+echo -e "\nBuilding for Linux(386)"
 export GOOS=linux
-go build -o $DESTDIR/linux/${BIN} ${BIN}
+go build -v -o $DESTDIR/linux/${BIN} ${BIN}
 
-echo "Building for OS X/Darwin(386)"
+echo -e "\nBuilding for OS X/Darwin(386)"
 export GOOS=darwin
-go build -o $DESTDIR/osx/${BIN} ${BIN}
+go build -v -o $DESTDIR/osx/${BIN} ${BIN}
 
-echo "Building for Windows(386)"
+echo -e "\nBuilding for Windows(386)"
 export GOOS=windows
-go build -o $DESTDIR/win/${BIN}.exe ${BIN}
+go build -v -o $DESTDIR/win/${BIN}.exe ${BIN}
 
