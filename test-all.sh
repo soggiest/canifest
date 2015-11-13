@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #
-# Script used to control the build
+# Script used to run tests 
 # 
 
 BIN=df_gen
@@ -17,11 +17,6 @@ fi
 export GOARCH=386
 export GOPATH=`pwd`
 
-mkdir -p $DESTDIR
-
-# Ensure formatting is followed 
-go fmt ${BIN}
-
-echo "Building..."
-go build -v -o $DESTDIR/linux/${BIN} ${BIN}
+echo "Testing..."
+go test -v ./...
 
