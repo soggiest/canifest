@@ -1,0 +1,16 @@
+= Api
+The Canifest API provides a single entrypoint to all Canifest functions
+
+== Version
+Version: -100
+
+== Get Methods
+
+=== list
+Lists available instuctions
+-----------
+GET /api/v-100/list
+
+Example:
+curl http://canifest.example.com/api/v-100/list
+-----------
