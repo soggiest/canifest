@@ -10,7 +10,8 @@ Version: -100
 Lists available instuctions
 -----------
 GET /api/v-100/list
-
+-----------
 Example:
+-----------
 curl http://canifest.example.com/api/v-100/list
 -----------
