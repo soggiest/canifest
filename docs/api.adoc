@@ -11,6 +11,23 @@ Lists available instuctions
 -----------
 GET /api/v-100/list
 -----------
+Response:
+-----------
+FROM
+LABEL
+COPY
+RUN
+CMD
+ENV
+ARG
+EXPOSE
+USER
+VOLUMES
+WORKDIR
+ONBUILD
+ENTRYPOINT
+STOPSIGNAL(?)
+-----------
 Example:
 -----------
 curl http://canifest.example.com/api/v-100/list
