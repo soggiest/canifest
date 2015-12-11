@@ -9,24 +9,26 @@ Version: -100
 === list
 Lists available instuctions
 -----------
-GET /api/v-100/list
+GET /api/v-100/instructions
 -----------
 Response:
 -----------
-FROM
-LABEL
-COPY
-RUN
-CMD
-ENV
-ARG
-EXPOSE
-USER
-VOLUMES
-WORKDIR
-ONBUILD
-ENTRYPOINT
-STOPSIGNAL(?)
+[
+    "FROM",
+    "LABEL",
+    "COPY",
+    "RUN",
+    "CMD",
+    "ENV",
+    "ARG",
+    "EXPOSE",
+    "USER",
+    "VOLUMES",
+    "WORKDIR",
+    "ONBUILD",
+    "ENTRYPOINT",
+    "STOPSIGNAL"
+]
 -----------
 Example:
 -----------
