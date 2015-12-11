@@ -6,7 +6,7 @@ Version: -100
 
 == Get Methods
 
-=== list
+=== instructions
 Lists available instuctions
 -----------
 GET /api/v-100/instructions
